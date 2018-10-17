@@ -2,7 +2,9 @@
 # Site
 
 title: Casa Gre.Gor.
-url: https://clean-oryx.cloudvent.net
+#url: https://clean-oryx.cloudvent.net
+#url: https://casagregor-webdev.github.io
+url: https://www.casagregor.org
 baseurl:
 google_analytics_key:
 
@@ -16,7 +18,8 @@ author:
 social:
   name: Casa Gre.Gor.
   links:
-    - https://github.com/CloudCannon/cause-jekyll-template
+    - https://www.casagregor.org
+#    - https://github.com/CloudCannon/cause-jekyll-template
 
 # -----
 # Build
@@ -62,6 +65,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - TODO.md
 
 # -----------
 # CloudCannon

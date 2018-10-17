@@ -35,7 +35,7 @@
 			<p class="editor-link" style="margin-bottom: 20px;"><a href="cloudcannon:collections/_data/company.yml" class="btn"><strong>&#9998;</strong> Update footer</a></p>
 			<div class="container">
 				<div class="about">
-					<p>{{ site.data.company.mission_statement }}</p>
+					<p>{{ site.data.company.mission_statement }} </p>
 				</div>
 
 				<div class="contact">
@@ -49,6 +49,9 @@
     {{ site.data.company.address }} <br> {{ site.data.company.address1 }}
 <!--						</a> -->
 					</address>
+<p><a href="/privacy">Informativa Privacy</a> - <a href="/statuto">Statuto</a> </p>
+</div>
+<div>
 					<p class="email">
 						<a href="mailto:{{ site.data.company.email }}">
 							{% include icons/footer.html icon="email" %} {{ site.data.company.email }}
