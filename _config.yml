@@ -6,7 +6,7 @@ title: Casa Gre.Gor.
 #url: https://casagregor-webdev.github.io
 url: https://www.casagregor.org
 baseurl:
-google_analytics_key:
+google_analytics_key: UA-127736115-1
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
