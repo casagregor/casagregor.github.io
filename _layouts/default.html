@@ -12,15 +12,6 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-icon-180x180.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" sizes="32x32">
                 <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.baseurl }}/android-icon-192x192.png">
-
-		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
-			<script>
-				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-				ga('create', '{{ site.google_analytics_key }}', 'auto');
-				ga('send', 'pageview');
-			</script>
-			<script async src='https://www.google-analytics.com/analytics.js'></script>
-		{% endif %}
 	</head>
 	<body>
 		<nav>
