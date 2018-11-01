@@ -61,7 +61,7 @@ form {
 	max-width: 500px;
 	margin: 0 auto;
 
-	input[type="text"] {
+	input[type="text"], input[type="email"], textarea {
 		flex-grow: 1;
 		flex-shrink: 1;
 		width: 100%;
@@ -89,7 +89,7 @@ form {
 	}
 }
 
-.button a, input[type="submit"], input[type="text"] {
+.button a, input[type="submit"], input[type="text"], input[type="email"], textarea {
 	border: 0;
 	padding: 15px 40px;
 	box-sizing: content-box;
