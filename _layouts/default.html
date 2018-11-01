@@ -14,11 +14,12 @@
                 <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.baseurl }}/android-icon-192x192.png">
 	</head>
 	<body>
-		<nav>
-			<div class="container">
-				<a href="{{ site.baseurl }}/">{% include logo.html %}</a>
-			</div>
-		</nav>
+        <nav>
+		<div class="container">
+                <a href="{{ site.baseurl }}/" style="text-decoration: none;">{% include logo.html %}</a>
+                {% include navigation.html %} 
+		</div>
+        </nav>
 		<div class="content">
 			{{ content }}
 		</div>
