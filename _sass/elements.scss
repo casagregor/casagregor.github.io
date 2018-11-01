@@ -6,6 +6,18 @@ html, body {
 	min-width: 380px;
 }
 
+textarea {
+    resize: vertical;
+    height: 90px;
+}
+
+textarea#message , input#email {
+	font-family: 'Open Sans', sans-serif;
+    width: 90%;
+	border-radius: 30px;
+}
+
+
 img {
 	max-width: 100%;
 }
@@ -56,6 +68,10 @@ section {
 	padding: 60px 0;
 }
 
+form#form-contatti {
+    flex-direction: column;
+}
+
 form {
 	display: flex;
 	max-width: 500px;
@@ -104,7 +120,7 @@ form {
 	font-weight: bold;
 }
 
-.button a {
+.button a, input#form-button {
 	display: inline-block;
 	text-decoration: none;
 	border-radius: 30px;

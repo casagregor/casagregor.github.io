@@ -3,12 +3,10 @@ layout: default
 title: Contatti
 ---
 
-<header>
-	<div class="container">
-
-        <div class="column">
+<div class="container">
+    <div class="columns">
         <div>
-            <form action="https://formspree.io/info@casagregor.org" method="POST" class="contact-form" style="flex-direction: column;">
+            <form action="https://formspree.io/info@casagregor.org" method="POST" class="form-contatti" id="form-contatti">
                 <div>
                     <h1 class="editable"> Scrivici </h1>
                 </div>
@@ -19,18 +17,17 @@ title: Contatti
                     <textarea name="message" id="message" placeholder="Scrivi qui il tuo messaggio..." required=""></textarea>
                 </div>
                 <div>
-                    <input type="submit" value="Invia" style="border-radius: 30px;">
+                    <input type="submit" value="Invia" id="form-button">
                 </div>
                 <div>
                     <input type="hidden" name="origin" value="">
                 </div>
             </form>
         </div>
-        </div>
 
-		<div class="column">
+	<div>
 			<img src="{{ site.baseurl }}/images/flavio-amiel-537773-unsplash.png" alt="Lettere" />
 		</div>
 	</div>
-</header>
+</div>
 
