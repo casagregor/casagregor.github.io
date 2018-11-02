@@ -1,3 +1,6 @@
+---
+css-ver: 1.2
+---
 <!doctype html>
 <html>
 	<head>
@@ -8,17 +11,20 @@
 		{% seo %}
 
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css?ver={{ page.css-ver }}">
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-icon-180x180.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" sizes="32x32">
                 <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.baseurl }}/android-icon-192x192.png">
 	</head>
 	<body>
-		<nav>
-			<div class="container">
-				<a href="{{ site.baseurl }}/">{% include logo.html %}</a>
-			</div>
-		</nav>
+    <header id="mainHeader">
+        <nav>
+		<div class="container">
+                <a href="{{ site.baseurl }}/">{% include logo.html %}</a>
+                {% include navigation.html %} 
+		</div>
+        </nav>
+    </header>
 		<div class="content">
 			{{ content }}
 		</div>
@@ -27,20 +33,19 @@
 			<div class="container">
 				<div class="about">
 					<p>{{ site.data.company.mission_statement }} </p>
+
 				</div>
 
 				<div class="contact">
                                         <p> 
-                                                {{ site.data.company.company_name }} - {{ site.data.company.codfis }}
+                                                {{ site.data.company.company_name }} <br> {{ site.data.company.codfis }}
                                         </p>
-
 					<address>
 <!--						<a href="https://www.google.com/maps/place/{{ site.data.company.address | url_encode }}">
 							{% include icons/footer.html icon="place" %} --> 
     {{ site.data.company.address }} <br> {{ site.data.company.address1 }}
 <!--						</a> -->
 					</address>
-<p><a href="/privacy">Informativa Privacy</a> - <a href="/statuto">Statuto</a> </p>
 </div>
 <div>
 					<p class="email">
@@ -48,6 +53,8 @@
 							{% include icons/footer.html icon="email" %} {{ site.data.company.email }}
 						</a>
 					</p>
+<p><a href="/privacy">Informativa Privacy</a></p> 
+<p><a href="/statuto">Statuto</a></p>
 <!--
 					<p class="phone">
 						<a href="tel:{{ site.data.company.phone | replace: ' ', '-' }}">
@@ -73,7 +80,8 @@
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script type="text/javascript">
+		<script src="{{ site.baseurl }}/js/main.js"></script>
+		<!--script type="text/javascript">
 			$('a[href*=\\#]').on('click', function(event){
 				var el = $(this.hash);
 				if (el.length > 0) {
@@ -81,6 +89,6 @@
 					$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 				}
 			});
-		</script>
+		</script-->
 	</body>
 </html>

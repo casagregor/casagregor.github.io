@@ -3,26 +3,25 @@ layout: default
 title: Casa Gre.Gor.
 ---
 
-<header>
-	<div class="container">
-		<div class="column">
+<div class="container">
+    <div class="columns">
+		<div>
 			<div>
-				<h1 class="editable">
-					Unisciti a noi!
-				</h1>
+				<h1 class="editable"> Unisciti a noi!  </h1>
 				<p class="editable">
 					Una comunit&agrave; di persone che si prendono cura di chi ha pi&ugrave; bisogno.
 				</p>
-				<div class="button">
-					<a href="#donate">Dona</a>
-				</div>
 			</div>
+			<div class="button">
+				<a href="{{ site.baseurl }}/donare">Dona</a>
+			</div>
+            <p></p>
 		</div>
-		<div class="column">
+		<div>
 			<img src="{{ site.baseurl }}/images/tyler-nix-525388-unsplash.png" alt="Love" />
-		</div>
-	</div>
-</header>
+        </div>
+    </div>
+</div>
 
 <div class="container">
 	<h2 class="editable" style="text-align: center;">Cosa fanno i volontari</h2>
@@ -57,39 +56,21 @@ title: Casa Gre.Gor.
 			<h2 class="editable">La nostra Missione</h2>
 
 			<p class="editable">Accoglienza, solidarietà, mutualismo: azioni concrete nel territorio, sostenute da una comunità di persone che vivono in due quartieri della città di Milano.</p>
+				<div class="button">
+					<a href="{{ site.baseurl }}/fare">Cosa facciamo</a>
+				</div>
 		</div>
 	</div>
 </div>
 <div class="darker">
 	<div class="container">
-		<h2 class="editable">Vuoi saperne di più?</h2>
-		<p class="editable" style="text-align: center;">Iscriviti alla nostra newsletter per restare informato sulle attività dell'Associazione.</p>
+		<h2 class="editable">Restiamo in contatto</h2>
+		<p class="editable" style="text-align: center;">Iscriviti alla nostra newsletter per essere aggiornato sulle attività dell'Associazione.</p>
 		<form action="{{ site.newsletter_action }}" method="post">
 			<input type="text" name="EMAIL" placeholder="Email" />
 			<input type="submit" value="Registrati" />
 		</form>
 	</div>
-</div>
-
-<div class="container" id="donate">
-
-        <div class="columns">
-<div>
-	<h2 class="editable">Fai una donazione</h2>
-                <p class="editable">Attraverso una donazione puoi sostenere le attività promosse dall’associazione.
-                </p>
-            <p>Beneficiario: CASA GRE.GOR. APS
-            <br>IBAN: IT64W0335901600100000160745
-            <br>CAUSALE: erogazione liberale
-            <br>c/o Banca Prossima
-            </p>
-            </div>
-                <div>
-                        <img src="{{ site.baseurl }}/images/lina-trochez-377674-unsplash.png" alt="Help" />
-                </div>
-	<!--div class="donate">
-		{{ site.donation_embed }}
-	</div-->
 </div>
 
 
