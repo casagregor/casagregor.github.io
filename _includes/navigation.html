@@ -1,4 +1,4 @@
-	<a class="nav-toggle" id="open-nav" href="#" style="text-decoration: none;">&#9776;</a>
+	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
 	{% for link in site.data.navigation %}
 		{% assign class = "nav-menu" %}
 		{% if link.highlight %}
@@ -8,5 +8,5 @@
 		{% if link.link == page.url %}
 			{% assign class = class | append: " active" %}
 		{% endif %}
-		<a href="{{ site.baseurl }}{{ link.link }}" class="{{ class }}" style="text-decoration: none; font-size: 1.6em;">{{ link.name }}</a>
+		<a href="{{ site.baseurl }}{{ link.link }}" class="{{ class }}">{{ link.name }}</a>
 	{% endfor %}
