@@ -1,6 +1,6 @@
 	<a class="nav-toggle" id="open-nav" href="#" style="text-decoration: none;">&#9776;</a>
 	{% for link in site.data.navigation %}
-		{% assign class = "" %}
+		{% assign class = "nav-menu" %}
 		{% if link.highlight %}
 			{% assign class = class | append: " highlight" %}
 		{% endif %}

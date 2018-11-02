@@ -8,7 +8,7 @@
 }
 
 header {
-	padding-bottom: 50px;
+//	padding-bottom: 50px;
 
 	@media #{$desktop} {
 		.container {
@@ -33,13 +33,17 @@ header {
 	}
 
 	img {
-		margin: 100px auto 0 auto;
-		display: block;
-		max-width: 100%;
+        max-width:200px; 
+//        vertical-align: middle; 
+//        padding-bottom: 14px;
+//		margin: 100px auto 0 auto;
+//		display: block;
+//		max-width: 100%;
 	}
 }
 
-header, nav {
+//header, nav {
+header {
 	.container {
 		padding-top: 0;
 		padding-bottom: 0;
@@ -50,11 +54,11 @@ header, nav {
 	text-align: center;
 }
 
-nav .button {
-	position: absolute;
-	right: 35px;
-	top: 4px;
-}
+//nav .button {
+//	position: absolute;
+//	right: 35px;
+//	top: 4px;
+//}
 
 .thirds {
 	@media #{$desktop} {
