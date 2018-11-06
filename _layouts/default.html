@@ -38,10 +38,7 @@
                                                 {{ site.data.company.company_name }} <br> {{ site.data.company.codfis }}
                                         </p>
 					<address>
-<!--						<a href="https://www.google.com/maps/place/{{ site.data.company.address | url_encode }}">
-							{% include icons/footer.html icon="place" %} --> 
     {{ site.data.company.address }} <br> {{ site.data.company.address1 }}
-<!--						</a> -->
 					</address>
 </div>
 <div>
@@ -52,40 +49,12 @@
 					</p>
 <p><a href="/privacy">Informativa Privacy</a></p> 
 <p><a href="/statuto">Statuto</a></p>
-<!--
-					<p class="phone">
-						<a href="tel:{{ site.data.company.phone | replace: ' ', '-' }}">
-							{% include icons/footer.html icon="phone" %} {{ site.data.company.phone }}
-						</a>
-					</p>
--->
+<p><a href="/credits">Credits</a></p>
 				</div>
-<!--
-				<div class="sharing">
-					<a class="facebook" href="https://www.facebook.com/{{ site.data.company.facebook }}">
-						{% include icons/social-media.html social_icon="facebook" %}
-					</a>
-					<a class="twitter" href="https://twitter.com/{{ site.data.company.twitter }}">
-						{% include icons/social-media.html social_icon="twitter" %}
-					</a>
-					<a class="google-plus" href="https://plus.google.com/{{ site.data.company.google_plus }}">
-						{% include icons/social-media.html social_icon="google-plus" %}
-					</a>
-				</div>
--->
 			</div>
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="{{ site.baseurl }}/js/main.js"></script>
-		<!--script type="text/javascript">
-			$('a[href*=\\#]').on('click', function(event){
-				var el = $(this.hash);
-				if (el.length > 0) {
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-				}
-			});
-		</script-->
 	</body>
 </html>
