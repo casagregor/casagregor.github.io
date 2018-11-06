@@ -4,7 +4,7 @@
 title: Casa Gre.Gor.
 #url: https://clean-oryx.cloudvent.net
 #url: https://casagregor-webdev.github.io
-url: https://www.casagregor.org
+url: https://casagregor.org
 baseurl:
 google_analytics_key: 
 
@@ -18,7 +18,7 @@ author:
 social:
   name: Casa Gre.Gor.
   links:
-    - https://www.casagregor.org
+    - https://casagregor.org
 #    - https://github.com/CloudCannon/cause-jekyll-template
 
 # -----
