@@ -2,24 +2,20 @@
 # Site
 
 title: Casa Gre.Gor.
-#url: https://clean-oryx.cloudvent.net
-#url: https://casagregor-webdev.github.io
 url: https://casagregor.org
 baseurl:
-google_analytics_key: 
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Associazione di Promozione Sociale della comunità di Goretti e Greco
 author:
-  name:
-  email:
+  name: Emanuele Cisbani
+  email: info@casagregor.org
   twitter: # twitter username without the @ symbol
 social:
   name: Casa Gre.Gor.
   links:
     - https://casagregor.org
-#    - https://github.com/CloudCannon/cause-jekyll-template
 
 # -----
 # Build
