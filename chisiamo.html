@@ -1,0 +1,43 @@
+---
+layout: default
+title: Chi Siamo
+---
+
+<div class="container">
+	<div class="columns">
+        <div>
+			<div>
+				<p class="editable">
+Siamo un gruppo di laici impegnati da anni in attività non profit e uniti dall’appartenenza alla stessa comunità parrocchiale.
+</p><p>
+L’esperienza di molte iniziative ci ha insegnato che fare volontariato e promozione sociale è un desiderio, diffuso capace di unire anche persone molto diverse tra loro. Per questo abbiamo scommesso sulla possibilità di un’iniziativa laica, non connotata da altra appartenenza che non sia il quartiere di residenza e il desiderio di condividere e fare del bene.
+</p><p>
+Ci chiamiamo Casa Gre.Gor. perché la casa è il luogo della partecipazione e del coinvolgimento, il luogo dello “stare insieme”. 
+</p><p>
+Il nostro logo è un albero (simbolo della vita) circondato dalle rotaie della ferrovia (come il territorio di Greco) e lambito dal corso d’acqua del naviglio (come il territorio di S. M. Goretti).
+</p><p>
+Maggiori dettagli su finalità e scopi di Casa Gre.Gor. nei due articoli specifici dello <a href="{{ site.baseurl }}/statuto">Statuto</a>.
+				</p>
+			</div>
+		</div>
+    </div>
+</div>
+
+<div class="container">
+
+    <ul class="staff">
+			{% for person in site.staff_members %}
+				<li>
+					<div class="square-image" style="background-image: url({{ site.baseurl }}/images/staff/{{ person.image_path }})"></div>
+					<div class="name">{{ person.name }}</div>
+					<div class="position">{{ person.position }}</div>
+				</li>
+			{% endfor %}
+    </ul>
+
+</div>
+
+
+
+
+
