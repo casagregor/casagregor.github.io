@@ -1,10 +1,11 @@
 .container {
-	max-width: 1000px;
-	width: 100%;
+	max-width: 98%;
+	width: 98%;
 	margin: 0 auto;
 	position: relative;
-	padding: 50px 30px;
+	padding: 50px 1%;
 	box-sizing: border-box;
+    float: left;
 }
 
 header {
@@ -64,17 +65,17 @@ header {
 	@media #{$desktop} {
 		display: flex;
 	}
-	margin: 90px -15px 0 -15px;
+	margin: 90px 0;
 	padding: 0;
 	list-style: none;
 
 	li {
 		box-sizing: border-box;
 		margin: 70px 0px;
-		width: 100%;
+		width: 98%;
 		border: 1px solid #dfdfdf;
 		border-radius: 3px;
-		padding: 0 30px 25px 30px;
+		padding: 0 1% 25px 1%;
 		@media #{$desktop} {
 			width: 33%;
 			margin: 0 15px;
@@ -179,9 +180,10 @@ blockquote {
 }
 
 footer {
-	background: #000;
-
+	background: #000 !important;
 	padding: 40px 0;
+    float: left;
+    background: #FFF;
 
 	&, a {
 		color: #8e8e8e;
@@ -360,8 +362,10 @@ footer {
 }
 
 .darker {
-	background: #f8fafb;
+	background: #f8fafb !important;
 	padding: 60px 0;
+    float: left;
+    width: 100%;
 }
 
 .lista {
