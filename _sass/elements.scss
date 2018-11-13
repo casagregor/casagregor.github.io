@@ -1,9 +1,38 @@
 html, body {
-	padding: 0;
+//	padding: 0;
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 	color: #333;
-	min-width: 380px;
+//	min-width: 380px;
+    float: left;
+    background: #FFF;
+}
+
+html {
+    padding:0;
+    width:100%;
+}
+
+body {
+    width:90%;
+    padding:0 5%;
+}
+
+/* header della pagina*/
+#mainHeader {
+    float: left;
+    width: 98%;
+    margin: 0;
+    padding: 0 1%;
+    background: #FFF;
+}
+
+.content {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+    background: #FFF;
 }
 
 textarea {
@@ -74,13 +103,13 @@ form#form-contatti {
 
 form {
 	display: flex;
-	max-width: 500px;
+	max-width: 100%;
 	margin: 0 auto;
 
 	input[type="text"], input[type="email"], textarea {
 		flex-grow: 1;
 		flex-shrink: 1;
-		width: 100%;
+		width: 54%;
 		border: 1px solid #ddd;
 
 
@@ -107,10 +136,11 @@ form {
 
 .button a, input[type="submit"], input[type="text"], input[type="email"], textarea {
 	border: 0;
-	padding: 15px 40px;
+	padding: 15px 2%;
 	box-sizing: content-box;
 	font-size: 1em;
 	font-weight: 100;
+    text-align: center;
 }
 
 .button a, input[type="submit"] {
@@ -118,6 +148,7 @@ form {
 	color: #fff;
 	cursor: pointer;
 	font-weight: bold;
+    width: 40%;
 }
 
 .button a, input#form-button {
@@ -125,6 +156,7 @@ form {
 	text-decoration: none;
 	border-radius: 30px;
 	transition: 200ms ease-in background;
+    white-space:nowrap;
 
 	&:hover {
 		background: darken($brand-color, 5%);
