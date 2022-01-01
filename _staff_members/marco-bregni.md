@@ -1,5 +1,5 @@
 ---
-name: Adele Leoncini
+name: Marco Bregni
 position: Responsabile del Centro di Ascolto
-image_path: adele-leoncini.jpg
+image_path: marco-bregni.jpg
 ---
